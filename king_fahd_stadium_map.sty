@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_263431625fbde165eb799171f81896b8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_263431625fbde165eb799171f81896b8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_263431625fbde165eb799171f81896b8 = L.map(
+                "map_263431625fbde165eb799171f81896b8",
+                {
+                    center: [24.774265, 46.739586],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 18,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0f045f844f04a23cdf5e5b83c3501fae = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0f045f844f04a23cdf5e5b83c3501fae.addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+            var marker_4f6f63b688ac777d4d749f23a56575be = L.marker(
+                [24.774265, 46.739586],
+                {
+}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+            var icon_fdd0fe9d95324a3e14193b732724be9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4f6f63b688ac777d4d749f23a56575be.bindTooltip(
+                `<div>
+                     موقعك داخل ملعب الملك فهد
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f6f63b688ac777d4d749f23a56575be.setIcon(icon_fdd0fe9d95324a3e14193b732724be9d);
+            
+    
+            var marker_d9c0841dcd0824c9466a0ac6fd49f3d9 = L.marker(
+                [24.774365, 46.739786],
+                {
+}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+            var icon_57e3bf747f13e076ebcb4175cf197ecf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b60aa80ef8e17ea4513c351582a892b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4517dcc6a770ca09b94379c76b507260 = $(`<div id="html_4517dcc6a770ca09b94379c76b507260" style="width: 100.0%; height: 100.0%;">كشك شرقي</div>`)[0];
+                popup_b60aa80ef8e17ea4513c351582a892b0.setContent(html_4517dcc6a770ca09b94379c76b507260);
+            
+        
+
+        marker_d9c0841dcd0824c9466a0ac6fd49f3d9.bindPopup(popup_b60aa80ef8e17ea4513c351582a892b0)
+        ;
+
+        
+    
+    
+                marker_d9c0841dcd0824c9466a0ac6fd49f3d9.setIcon(icon_57e3bf747f13e076ebcb4175cf197ecf);
+            
+    
+            var marker_2ba02d9a87daaa2075c70d2c2271ae4b = L.marker(
+                [24.774165, 46.739386],
+                {
+}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+            var icon_317eb4dca92fbab6a189ca972b2fc095 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc7c72958e7d1f374b4f392f7d40a620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0711de8b1d9b02581b34313fe5c962fe = $(`<div id="html_0711de8b1d9b02581b34313fe5c962fe" style="width: 100.0%; height: 100.0%;">كشك غربي</div>`)[0];
+                popup_bc7c72958e7d1f374b4f392f7d40a620.setContent(html_0711de8b1d9b02581b34313fe5c962fe);
+            
+        
+
+        marker_2ba02d9a87daaa2075c70d2c2271ae4b.bindPopup(popup_bc7c72958e7d1f374b4f392f7d40a620)
+        ;
+
+        
+    
+    
+                marker_2ba02d9a87daaa2075c70d2c2271ae4b.setIcon(icon_317eb4dca92fbab6a189ca972b2fc095);
+            
+    
+            var marker_d2c47471227c3eaf906e80568d012234 = L.marker(
+                [24.774465, 46.739586],
+                {
+}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+            var icon_8cb8cebdd7f3ebc8061ce5c7502e4b7a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_34ff8e0338ea5ea50d9a2cf11e4187ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6520ac0c043abcad8c7ad67c88710f8 = $(`<div id="html_d6520ac0c043abcad8c7ad67c88710f8" style="width: 100.0%; height: 100.0%;">كشك شمالي</div>`)[0];
+                popup_34ff8e0338ea5ea50d9a2cf11e4187ab.setContent(html_d6520ac0c043abcad8c7ad67c88710f8);
+            
+        
+
+        marker_d2c47471227c3eaf906e80568d012234.bindPopup(popup_34ff8e0338ea5ea50d9a2cf11e4187ab)
+        ;
+
+        
+    
+    
+                marker_d2c47471227c3eaf906e80568d012234.setIcon(icon_8cb8cebdd7f3ebc8061ce5c7502e4b7a);
+            
+    
+            var poly_line_240fdd2f803917d5571b56f75a7a3245 = L.polyline(
+                [[24.774265, 46.739586], [24.774465, 46.739586]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+            poly_line_240fdd2f803917d5571b56f75a7a3245.bindTooltip(
+                `<div>
+                     أقرب كشك: كشك شمالي
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60e9f94a2b2f8f1269b0d61695aa07c2 = L.circleMarker(
+                [24.774365, 46.739486],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+        var popup_536f812469523beef33cf7839c3a8860 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b6548c2f2a33ff66cb0d95b56e1cb05 = $(`<div id="html_7b6548c2f2a33ff66cb0d95b56e1cb05" style="width: 100.0%; height: 100.0%;">المقعد: متاح</div>`)[0];
+                popup_536f812469523beef33cf7839c3a8860.setContent(html_7b6548c2f2a33ff66cb0d95b56e1cb05);
+            
+        
+
+        circle_marker_60e9f94a2b2f8f1269b0d61695aa07c2.bindPopup(popup_536f812469523beef33cf7839c3a8860)
+        ;
+
+        
+    
+    
+            var circle_marker_f58955eedbdb6da842758d2c1f85bbd3 = L.circleMarker(
+                [24.774165, 46.739686],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+        var popup_923f1f6d53553885b91338ee99c0cf3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72b1ee0f1855bc6c49959cf7ef46774f = $(`<div id="html_72b1ee0f1855bc6c49959cf7ef46774f" style="width: 100.0%; height: 100.0%;">المقعد: مشغول</div>`)[0];
+                popup_923f1f6d53553885b91338ee99c0cf3a.setContent(html_72b1ee0f1855bc6c49959cf7ef46774f);
+            
+        
+
+        circle_marker_f58955eedbdb6da842758d2c1f85bbd3.bindPopup(popup_923f1f6d53553885b91338ee99c0cf3a)
+        ;
+
+        
+    
+    
+            var circle_marker_d27bbae85a949c834942cf18370072f7 = L.circleMarker(
+                [24.774265, 46.739786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+        var popup_3a74398a86423e467755480cf63581c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c351cfe1d8510b363ccea3c6efcc8fb0 = $(`<div id="html_c351cfe1d8510b363ccea3c6efcc8fb0" style="width: 100.0%; height: 100.0%;">المقعد: متاح</div>`)[0];
+                popup_3a74398a86423e467755480cf63581c0.setContent(html_c351cfe1d8510b363ccea3c6efcc8fb0);
+            
+        
+
+        circle_marker_d27bbae85a949c834942cf18370072f7.bindPopup(popup_3a74398a86423e467755480cf63581c0)
+        ;
+
+        
+    
+    
+            var poly_line_6c98dccc8eb180727c0d614cd32e8a23 = L.polyline(
+                [[24.774265, 46.739586], [24.774365, 46.739486]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_263431625fbde165eb799171f81896b8);
+        
+    
+            poly_line_6c98dccc8eb180727c0d614cd32e8a23.bindTooltip(
+                `<div>
+                     أقرب مقعد متاح
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
